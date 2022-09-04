@@ -134,9 +134,12 @@ void loop() {
 //////////for day of week display///////////
   for (int i = 1; i <=7; i++)
   {
-    if (i+2 == dow)
+    if (i == dow)
     {
+      //if (sec - 2 * (sec / 2) ==0)
+      //{
       matrix.drawLine(2 + (i-1)*4, 7, 4 + (i-1)*4, 7,colors[2]);
+      //} 
     }
     else
     {
